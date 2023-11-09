@@ -11,6 +11,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import { QueryClientProvider } from "@tanstack/react-query";
 import NProgress from "nprogress";
 
+import CommandMenu from "@app/components/cmdk/CommandMenu";
 import NotificationProvider from "@app/components/context/Notifications/NotificationProvider";
 import Telemetry from "@app/components/utilities/telemetry/Telemetry";
 import { TooltipProvider } from "@app/components/v2";
@@ -105,6 +106,7 @@ const App = ({ Component, pageProps, ...appProps }: NextAppProp): JSX.Element =>
                       <NotificationProvider>
                         <AppLayout>
                           <Component {...pageProps} />
+                          <CommandMenu />
                         </AppLayout>
                       </NotificationProvider>
                     </UserProvider>
