@@ -18,7 +18,16 @@ const CommandMenu = () => {
                     {
                         id: "add-secret",
                         children: "Add Secret",
-                        icon: "DocumentPlusIcon",
+                        icon: "PlusIcon",
+                        closeOnSelect: true,
+                        onClick: () => {
+                            console.log("Click")
+                        },
+                    },
+                    {
+                        id: "add-folder",
+                        children: "Add Folder",
+                        icon: "FolderPlusIcon",
                         closeOnSelect: true,
                         onClick: () => {
                             console.log("Click")
@@ -33,7 +42,16 @@ const CommandMenu = () => {
                     {
                         id: "new-project",
                         children: "Add New Project",
-                        icon: "PlusCircleIcon",
+                        icon: "DocumentPlusIcon",
+                        closeOnSelect: true,
+                        onClick: () => {
+                            console.log("Click")
+                        },
+                    },
+                    {
+                        id: "add-member-to-project",
+                        children: "Add Member to Project",
+                        icon: "UserGroupIcon",
                         closeOnSelect: true,
                         onClick: () => {
                             console.log("Click")
@@ -42,7 +60,7 @@ const CommandMenu = () => {
                     {
                         id: "invite-user",
                         children: "Invite User to Infisical",
-                        icon: "UserCircleIcon",
+                        icon: "UserPlusIcon",
                         closeOnSelect: true,
                         onClick: () => {
                             console.log("Click")
