@@ -25,6 +25,7 @@ html {
   .flex-0 {
     flex: 0;
   }
+
   .flex-2 {
     flex-grow: 2;
   }
@@ -111,14 +112,13 @@ html {
     @apply bg-primary-400;
   }
 }
+
 .tags-conic-bg {
-  background: conic-gradient(
-    rgb(235, 87, 87),
-    rgb(242, 201, 76),
-    rgb(76, 183, 130),
-    rgb(78, 167, 252),
-    rgb(250, 96, 122)
-  );
+  background: conic-gradient(rgb(235, 87, 87),
+      rgb(242, 201, 76),
+      rgb(76, 183, 130),
+      rgb(78, 167, 252),
+      rgb(250, 96, 122));
 }
 
 .show-tags {
@@ -126,6 +126,7 @@ html {
   transition: all 0.2s;
   opacity: 1;
 }
+
 .hide-tags {
   transform: translateY(-20px);
   transition: all 0.2s;
@@ -137,10 +138,17 @@ html {
   transition: all 0.2s;
   opacity: 1;
 }
+
 .hide-hex-input {
   transform: translateY(20px);
   transition: all 0.2s;
   opacity: 0;
+}
+
+/* CMDK styles overides */
+.command-palette {
+  z-index: 999999;
+  /* setting position on top of everything */
 }
 
 @import "@fontsource/inter/400.css";
